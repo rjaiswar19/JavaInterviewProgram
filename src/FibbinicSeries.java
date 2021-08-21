@@ -18,6 +18,9 @@ public class FibbinicSeries {
 		for(i=0;i<no;i++)
 		{
 			System.out.println(first);
+			//first=second;
+			//second=next;
+			//next=first+second;
 			next=first;
 			first=second;
 			second=next+first;

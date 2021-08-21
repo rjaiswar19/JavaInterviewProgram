@@ -2,16 +2,16 @@
 public class Reversestringwithpreservingpositionofspaces {
 
 	public static void main(String[] args) {
-		String s="My#name$is@rama";
+		String s="My name is rama";
 		char[] ch=s.toCharArray();
 		int r=ch.length-1,l=0;
 		while(l < r)
 		{
-			   if (!Character.isAlphabetic(ch[l]))
+			   if (ch[l]==' ')
 			   {
 	                l++;
 			   }
-	            else if(!Character.isAlphabetic(ch[r]))
+	            else if(ch[r]==' ')
 	            {
 	                r--;
 	            }
